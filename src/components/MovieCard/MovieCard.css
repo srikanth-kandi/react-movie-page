@@ -1,0 +1,33 @@
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.movie-card:hover {
+    border: 1px dashed #e9e9ea;
+}
+
+.movie-poster {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    height: 350px;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #e9e9ea;
+}
+
+.rating {
+    font-size: 18px;
+    margin-top: 10px;
+}

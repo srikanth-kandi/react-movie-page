@@ -1,0 +1,11 @@
+.upcoming {
+    color: #e9e9ea;
+    margin-top: 10px;
+}
+
+.movies-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 30px;
+}
