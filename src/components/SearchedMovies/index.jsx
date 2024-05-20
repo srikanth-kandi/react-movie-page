@@ -15,6 +15,7 @@ function SearchedMovies() {
 
   useEffect(() => {
     fetchMovies(searchTerm);
+    document.title = `${searchTerm} - Sri Movie Page`
   }, [searchTerm]);
 
   const fetchMovies = async (searchTerm) => {
@@ -25,11 +26,12 @@ function SearchedMovies() {
   };
 
   if (isLoading) {
-    return <LoadingSpinner />;
+    return <LoadingSpinner />
   }
 
   if (movies.length === 0) {
-    return <NotFound fromSearch={true} />;
+    document.title = "Search Not Found - Sri Movie Page"
+    return <NotFound fromSearch={true} />
   }
 
   return (
