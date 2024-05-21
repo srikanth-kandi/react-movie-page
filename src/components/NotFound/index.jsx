@@ -1,7 +1,12 @@
 import PropTypes from 'prop-types';
+import { useEffect } from 'react';
 import './NotFound.css';
 
 export default function NotFound({ fromSearch }) {
+    useEffect(() => {
+        document.title = "404 Not Found - Sri Movie Page"
+    });
+
     return (
         <div className="not-found">
             <h1>404 Not Found</h1>

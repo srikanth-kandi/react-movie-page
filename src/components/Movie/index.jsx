@@ -13,26 +13,25 @@ function Movie() {
     const movieDetailsApiUrl = `https://api.themoviedb.org/3/movie/${movieId}?api_key=${import.meta.env.VITE_TMDB_API_KEY}&language=en-US`
 
     useEffect(() => {
-        fetchMovieDetails();
-    }, [movieId])
-
-    const fetchMovieDetails = async () => {
-        try {
-            const response = await fetch(movieDetailsApiUrl);
-            const data = await response.json();
-            document.title = `${data.title} - Sri Movie Page`
-            if (data.status_code) {
+        const fetchMovieDetails = async () => {
+            try {
+                const response = await fetch(movieDetailsApiUrl);
+                const data = await response.json();
+                document.title = `${data.title} - Sri Movie Page`
+                if (data.status_code) {
+                    setHasError(true);
+                } else {
+                    setMovieDetails(data);
+                    setHasError(false);
+                }
+            } catch (error) {
                 setHasError(true);
-            } else {
-                setMovieDetails(data);
-                setHasError(false);
+            } finally {
+                setLoading(false);
             }
-        } catch (error) {
-            setHasError(true);
-        } finally {
-            setLoading(false);
-        }
-    };
+        };
+        fetchMovieDetails();
+    }, [movieId, movieDetailsApiUrl, setHasError, setMovieDetails, setLoading]);
 
     if (isLoading) {
         return <LoadingSpinner />

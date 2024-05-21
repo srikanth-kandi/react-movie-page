@@ -1,6 +1,83 @@
 .backdrop-container {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-size: contain;
     background-repeat: no-repeat;
-    min-height: 50vh;
+    background-position:right;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    min-height: 50dvh;
+}
+
+.poster-container {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 20px;
+}
+
+.movie-poster-movie-detail {
+    border-radius: 10px;
+    width: 200px;
+}
+
+.movie-info-movie-detail {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.movie-title-movie-detail {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.rating {
+    margin-top: 20px;
+    color: #98aed3;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.runtime-genres {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.runtime {
+    border: 2px solid #98aed3;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.genres {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.overview-container {
+    width: 50%;
+    padding: 10px 20px 20px 20px;
+}
+
+.overview-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.release-date {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.overview-content {
+    font-size: 18px;
 }
