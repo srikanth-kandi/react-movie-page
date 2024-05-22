@@ -4,10 +4,10 @@ import './MovieBackdrop.css'
 function MovieBackdrop({ details }) {
     const genres = details.genres.map(genre => genre.name).join(', ');
     const releaseDate = new Date(details.release_date);
-    const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const formattedDate = `${days[releaseDate.getDay()]}, ${months[releaseDate.getMonth()]} ${releaseDate.getDate()} ${releaseDate.getFullYear()}`;
-    const runtimeMinWidth = details.runtime >= 100 ? '92px' : '82px';
+    const runtimeMinWidth = details.runtime >= 100 ? '94px' : '84px';
 
     return (
         <div
