@@ -7,7 +7,7 @@ function MovieBackdrop({ details }) {
     const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const formattedDate = `${days[releaseDate.getDay()]}, ${months[releaseDate.getMonth()]} ${releaseDate.getDate()} ${releaseDate.getFullYear()}`;
-    const runtimeMinWidth = details.runtime >= 100 ? '94px' : '84px';
+    const runtimeMinWidth = details.runtime >= 100 ? '95px' : '85px';
 
     return (
         <div

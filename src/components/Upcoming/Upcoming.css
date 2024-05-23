@@ -1,9 +1,10 @@
 .upcoming {
     color: #e9e9ea;
     margin-top: 10px;
+    padding-bottom: 20px;
 }
 
-.movies-list {
+.upcoming-movies-list {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;

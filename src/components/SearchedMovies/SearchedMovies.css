@@ -1,6 +1,7 @@
-.movies-list {
+.search-movies-list {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     padding-left: 30px;
+    padding-bottom: 20px;
 }

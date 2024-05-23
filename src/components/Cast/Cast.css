@@ -1,0 +1,15 @@
+.cast-container {
+    padding: 20px;
+}
+
+.cast-heading {
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+.cast-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 30px;
+}

@@ -4,6 +4,8 @@ import LoadingSpinner from '../LoadingSpinner';
 import MovieCard from '../MovieCard';
 import NotFound from '../NotFound';
 
+import './SearchedMovies.css'
+
 const searchMovieApiUrl = `https://api.themoviedb.org/3/search/movie?api_key=${
     import.meta.env.VITE_TMDB_API_KEY
     }&language=en-US`;
@@ -36,7 +38,7 @@ function SearchedMovies() {
 
   return (
     <div>
-      <ul className="movies-list">
+      <ul className="search-movies-list">
         {movies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
         ))}

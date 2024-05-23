@@ -32,7 +32,7 @@ export default function Home() {
       {isLoading ? (
         <LoadingSpinner />
       ) : (
-        <ul className="movies-list">
+        <ul className="home-movies-list">
           {movies.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}

@@ -32,7 +32,7 @@ export default function Upcoming() {
       {isLoading ? (
         <LoadingSpinner />
       ) : (
-        <ul className="movies-list">
+        <ul className="upcoming-movies-list">
           {movies.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}

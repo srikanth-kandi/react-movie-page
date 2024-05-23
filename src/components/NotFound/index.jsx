@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { useEffect } from 'react';
 import './NotFound.css';
 
-export default function NotFound({ fromSearch }) {
+export default function NotFound({ fromSearch, msg }) {
     useEffect(() => {
         document.title = "404 Not Found - Sri Movie Page"
     });
@@ -13,7 +13,10 @@ export default function NotFound({ fromSearch }) {
             <br />
             {fromSearch
                 ? <p>Sorry, please try another search text.</p>
-                : <p>Sorry, the movie you are looking for does not exist.</p>
+                : (
+                    msg === "cast" ? <p>Sorry, the movie cast details you are looking for does not exist.</p>
+                    : <p>Sorry, the movie you are looking for does not exist.</p>
+                )
             }
         </div>
     )

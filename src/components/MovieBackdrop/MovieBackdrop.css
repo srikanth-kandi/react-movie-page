@@ -9,6 +9,7 @@
     margin: 20px;
     padding: 20px;
     min-height: 50dvh;
+    margin-bottom: 0px;
 }
 
 .poster-container {
@@ -54,6 +55,8 @@
     padding: 10px;
     font-weight: bold;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
 }
 
 .genres {

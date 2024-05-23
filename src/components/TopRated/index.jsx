@@ -32,7 +32,7 @@ export default function TopRated() {
       {isLoading ? (
         <LoadingSpinner />
       ) : (
-        <ul className="movies-list">
+        <ul className="top-rated-movies-list">
           {movies.map((movie) => (
             <MovieCard key={movie.id} movie={movie} />
           ))}
