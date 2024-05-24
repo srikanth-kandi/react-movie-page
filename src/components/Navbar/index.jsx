@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate, Outlet } from "react-router-dom";
+import { NavLink, Link, useNavigate, Outlet } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -16,16 +16,16 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <h1><Link to="/">Sri - Movie Page</Link></h1>
+        <h1><Link to="/" className="home-link">Sri - Movie Page</Link></h1>
         <ul className="nav-items-ul">
           <li>
-            <Link to="/">Popular</Link>
+            <NavLink to="/">Popular</NavLink>
           </li>
           <li>
-            <Link to="/top-rated">Top Rated</Link>
+            <NavLink to="/top-rated">Top Rated</NavLink>
           </li>
           <li>
-            <Link to="/upcoming">Upcoming</Link>
+            <NavLink to="/upcoming">Upcoming</NavLink>
           </li>
           <li className="search-container">
             <form onSubmit={handleSearchSubmit}>

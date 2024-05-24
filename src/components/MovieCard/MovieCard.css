@@ -35,3 +35,25 @@
 .movie-link {
     text-decoration: none;
 }
+
+@media screen and (max-width: 500px) {
+    .movie-card {
+        width: 100%;
+    }
+
+    .movie-poster {
+        max-width: 230px;
+    }
+
+    .movie-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .movie-card {
+        width: 40%;
+    }
+}

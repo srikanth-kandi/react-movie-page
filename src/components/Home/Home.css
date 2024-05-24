@@ -10,3 +10,10 @@
     list-style-type: none;
     padding-left: 30px;
 }
+
+@media screen and (max-width: 576px) {
+    .home-movies-list {
+        justify-content: center;
+        padding-left: 0px;
+    }
+}
