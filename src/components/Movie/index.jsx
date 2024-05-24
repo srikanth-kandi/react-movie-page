@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import LoadingSpinner from '../LoadingSpinner';
-import MovieBackdrop from '../MovieBackdrop'
-import NotFound from '../NotFound';
-import Cast from '../Cast'
+import { LoadingSpinner, MovieBackdrop, NotFound, Cast } from "..";
 import './Movie.css';
 
 function Movie() {

@@ -1,0 +1,13 @@
+export { default as About } from './About';
+export { default as Cast } from './Cast';
+export { default as CastCard } from './CastCard';
+export { default as Home } from './Home';
+export { default as LoadingSpinner } from './LoadingSpinner';
+export { default as Movie } from './Movie';
+export { default as MovieBackdrop } from './MovieBackdrop';
+export { default as MovieCard } from './MovieCard';
+export { default as Navbar } from './Navbar';
+export { default as NotFound } from './NotFound';
+export { default as SearchedMovies } from './SearchedMovies';
+export { default as TopRated } from './TopRated';
+export { default as Upcoming } from './Upcoming';

@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import LoadingSpinner from '../LoadingSpinner';
-import MovieCard from '../MovieCard';
-import NotFound from '../NotFound';
-
+import { LoadingSpinner, MovieCard, NotFound } from ".."; 
 import './SearchedMovies.css'
 
 const searchMovieApiUrl = `https://api.themoviedb.org/3/search/movie?api_key=${

@@ -1,11 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import Home from './components/Home'
-import TopRated from './components/TopRated'
-import Upcoming from './components/Upcoming'
-import SearchedMovies from './components/SearchedMovies'
-import Movie from './components/Movie'
-import NotFound from './components/NotFound'
-import Navbar from './components/Navbar'
+import { Home, TopRated, Upcoming, SearchedMovies, Movie, NotFound, Navbar } from './components'
 import './App.css'
 
 function App() {

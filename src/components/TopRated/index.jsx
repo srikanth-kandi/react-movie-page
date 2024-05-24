@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
-import LoadingSpinner from "../LoadingSpinner";
-import MovieCard from "../MovieCard";
+import { LoadingSpinner, MovieCard } from "..";
 import "./TopRated.css";
 
 const topRatedMovieApiUrl = `https://api.themoviedb.org/3/movie/top_rated?api_key=${

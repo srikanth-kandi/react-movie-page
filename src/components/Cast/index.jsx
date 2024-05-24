@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
-import LoadingSpinner from "../LoadingSpinner";
-import CastCard from '../CastCard';
-import NotFound from "../NotFound";
+import { LoadingSpinner, CastCard, NotFound } from '..';
 import './Cast.css'
 
 function Cast({ movieId }) {
