@@ -1,3 +1,24 @@
+:root {
+  /* Breakpoints */
+  --breakpoint-mobile: 768px;
+  --breakpoint-tablet: 1024px;
+  --breakpoint-laptop: 1440px;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* Colors */
+  --bg-primary: #040507;
+  --bg-secondary: rgb(33, 33, 33);
+  --text-primary: #e9e9ea;
+  --text-secondary: #98aed3;
+  --accent: #f9f9f9;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,5 +29,32 @@
   width: 100%;
   min-height: 100dvh;
   padding: 0px;
-  background-color: #040507;
+  background-color: var(--bg-primary);
+}
+
+/* Responsive container widths */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--spacing-sm);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 var(--spacing-lg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+    padding: 0 var(--spacing-xl);
+  }
 }

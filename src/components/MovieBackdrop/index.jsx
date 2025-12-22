@@ -12,8 +12,7 @@ function MovieBackdrop({ details }) {
     return (
         <div
           className="backdrop-container"
-          style={{backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 1) 35%, rgba(0, 0, 0, 0) 100%),
-                                    url(https://image.tmdb.org/t/p/original${details.backdrop_path})`}}
+          style={{backgroundImage: `url(https://image.tmdb.org/t/p/original${details.backdrop_path})`}}
         >
             <div className="poster-container">
                 <img

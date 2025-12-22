@@ -1,3 +1,11 @@
 .loading-spinner {
     text-align: center;
+    padding: 2rem;
+    color: var(--text-primary, #e9e9ea);
+}
+
+@media screen and (max-width: 767px) {
+    .loading-spinner {
+        padding: 1.5rem;
+    }
 }

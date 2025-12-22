@@ -1,3 +1,47 @@
 .about {
-    color: #e9e9ea;
+    color: var(--text-primary, #e9e9ea);
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* ==================== Mobile (< 768px) ==================== */
+@media screen and (max-width: 767px) {
+    .about {
+        padding: 1rem;
+    }
+    
+    .about h1 {
+        font-size: 1.5rem;
+    }
+    
+    .about p {
+        font-size: 1rem;
+    }
+}
+
+/* ==================== Desktop (> 1440px) ==================== */
+@media screen and (min-width: 1441px) {
+    .about {
+        padding: 3rem;
+        max-width: 1400px;
+    }
+    
+    .about h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about p {
+        font-size: 1.2rem;
+    }
 }
